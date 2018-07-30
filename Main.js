@@ -15,7 +15,7 @@ const baseNumber = {
   backgroundColor: '#333',
   textAlign: 'right',
   padding: 10,
-  fontSize: 30,
+  fontSize: 36,
   fontWeight: 'bold',
   borderBottomWidth: 1,
   borderColor: '#fff',
@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   top: {
+    backgroundColor: '#333',
     paddingTop: 20,
   },
   bottom: {
@@ -63,13 +64,31 @@ const App = ({
   <View style={styles.container}>
     <View style={styles.top}>
       <TouchableOpacity onPress={() => toggleNegativeAction(2)}>
-        <Text style={styles.append}>{stack[2] || 0}</Text>
+        <Text
+          style={styles.append}
+          numberOfLines={1}
+        >
+          {'  '}
+          {stack[2] || 0}
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => toggleNegativeAction(1)}>
-        <Text style={styles.append}>{stack[1] || 0}</Text>
+        <Text
+          style={styles.append}
+          numberOfLines={1}
+        >
+          {'  '}
+          {stack[1] || 0}
+        </Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={() => toggleNegativeAction(0)}>
-        <Text style={styles[inputState]}>{stack[0] || 0}</Text>
+        <Text
+          style={styles[inputState]}
+          numberOfLines={1}
+        >
+          {'  '}
+          {stack[0] || 0}
+        </Text>
       </TouchableOpacity>
     </View>
     <View style={styles.bottom}>

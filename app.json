@@ -1,5 +1,16 @@
 {
   "expo": {
-    "sdkVersion": "27.0.0"
+    "name": "React Native Calculator",
+    "icon": "./logo.png",
+    "description": "A reverse polish notation calculator.",
+    "sdkVersion": "27.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "Hydrophonix.RNC"
+    },
+    "android": {
+      "package": "Hydrophonix.RNC"
+    }
   }
 }
